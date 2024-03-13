@@ -1,9 +1,3 @@
-### Original Guide:
-
-[Miner Setup Guide for SN 27](https://docs.neuralinternet.ai/products/subnet-27-compute/bittensor-compute-subnet-miner-setup)
-
-##Extra steps following on from subnet27 guide:
-
 ### SubTensor Install Extra Steps:
 
 `rm -rf subtensor/`
@@ -99,7 +93,6 @@ Ports which were specified during install (2345:4532) and port 30333 should be o
 
 * it is best currently to run only one gpu per hotkey
 * don't remove staked TAO whilst miner is still running
-
 
 
 
