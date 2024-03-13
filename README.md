@@ -95,6 +95,20 @@ Ports which were specified during install (2345:4532) and port 30333 should be o
 
 `hashcat -b -m 610`
 
+##### To SSH into remote machine:
+
+`ssh <user>@<ip_address> -i ~/.ssh/id_ed25519`
+
+##### To regenerate coldkey/hotkey:
+
+to recreate coldkey if it gets lost/want to use on another miner:
+
+`btcli w regen_coldkey --mnemonic <words>`
+
+to recreate hotkey:
+
+`btcli w regen_hotkey --mnemonic <words>`
+
 ### Other Comments:
 
 * it is best currently to run only one gpu per hotkey
