@@ -2,7 +2,7 @@
 
 [Miner Setup Guide for SN 27](https://docs.neuralinternet.ai/products/subnet-27-compute/bittensor-compute-subnet-miner-setup)
 
-##Extra steps following on from subnet27 guide:
+## Extra steps following on from subnet27 guide:
 
 ### SubTensor Install Extra Steps:
 
@@ -29,7 +29,7 @@ Run Docker to see if it is running for Subtensor with:
 
 
 
-###NVDIA CUDA Drivers install extra steps
+### NVDIA CUDA Drivers install extra steps
 
 
 `sudo apt install build-essential`
@@ -77,13 +77,13 @@ The above steps should remove the hashcat error when trying to get the miner to 
 
 ### Extra Steps:
 
-#####To check if miner is getting rewards:
+##### To check if miner is getting rewards:
 
 `btcli w overview --wallet.name $cold --subtensor.network finney`
 
 Replacing the $cold with the coldkey
 
-#####To check what ports are open use:
+##### To check what ports are open use:
 
 `sudo ufw status`
 
@@ -91,7 +91,7 @@ Replacing the $cold with the coldkey
 
 Ports which were specified during install (2345:4532) and port 30333 should be open. 
 
-#####To check miner hash speed:
+##### To check miner hash speed:
 
 `hashcat -b -m 610`
 
