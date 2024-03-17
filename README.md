@@ -1,9 +1,9 @@
-### Original Guide:
+### Original Guide (Neural Internet's):
 
 [Miner Setup Guide for SN 27](https://docs.neuralinternet.ai/products/subnet-27-compute/bittensor-compute-subnet-miner-setup)
 
 
-## Updated Full Guide:
+## Updated Guide with Useful Extra Steps:
 
 * Find a cloud GPU provider and deploy an instance of a machine.
 * SSH into it
@@ -57,11 +57,7 @@
 
 `sudo ./scripts/run/subtensor.sh -e docker --network mainnet --node-type lite`
 
-Confirm the local subtensor is working with:
-
-`btcli s list --subtensor.chain_endpoint ws://127.0.0.1:9944`
-
-Run Docker to see if it is running for Subtensor with:
+###### Run Docker to see if it is running for Subtensor with:
 
 `docker ps`
 
@@ -75,7 +71,7 @@ Run Docker to see if it is running for Subtensor with:
 
 `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/opentensor/bittensor/master/scripts/install.sh)"`
 
-*verify the installation was successful by running:
+###### verify the installation was successful by running:
 
 `btcli --help`
 
@@ -379,6 +375,12 @@ The above steps should remove the hashcat error when trying to get the miner to 
 
 
 ### Extra Steps:
+
+##### Confirm the local subtensor is working with:
+
+* in subtensor folder run:
+
+`btcli s list --subtensor.chain_endpoint ws://127.0.0.1:9944`
 
 ##### To check if miner is getting rewards:
 
